@@ -1,7 +1,5 @@
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
+use std::time::Duration;
+
+pub fn do_some_work() {
+    std::thread::sleep(Duration::from_millis(10));
 }
